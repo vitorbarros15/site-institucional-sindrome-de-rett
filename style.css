@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+ 
+.body{
+    background: #CD4999;
+    display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+nav{
+    background: #CD4999;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    position: relative;
+    height: 62px;
+    width: 39px;
+    left: -250px;
+    top: 15px;
+}
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .menu-item {
+    display: flex;
+    text-align: center;
+    margin: 25px 0 0 25px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Mulish', sem serifa;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    transition: transform .3s;
+
+  }
+  
+  .menu-item:hover a {
+    font-weight: 500;
+    transform: scale(1.1);
+    color: #fff;
+  }
+
+main {
+    background: #CD4999;
+    background: #CD4999;
+    display: flex;
+    flex-direction: column;
+}
+
+.phraseLogo{
+  display: flex;
+}
+
+.phrase{
+    font-family: 'Paytone One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 90px;
+    color: #C4C2E0;
+
+    margin: 120px 0 0 75px;
+}
+
+.phrase span{
+  display: block;
+}
+
+.sindromeDe{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 56px;
+  /* or 102% */
+
+
+  color: #ccb5ec;
+
+  mix-blend-mode: normal;
+}
+
+.rett{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 93px;
+  line-height: 70px;
+
+  letter-spacing: 0.5em;
+
+  color: #784EAF;
+
+  mix-blend-mode: normal;
+}
+
+.logoText{
+    height: 126px;
+    margin: 130px 0 0 0;
+}
+
+h2{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+
+
+  color: #FFFFFF;
+
+  mix-blend-mode: normal;
+
+  margin: 0 0 0 77px;
+  max-width: 450px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.imagemGirl{
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*SOBRE NOS*/
+.tela2 {
+  position: relative;
+  background-color: #fff;
+  color: #000000;
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+.text-tela2{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.titleSobreNos span{
+  letter-spacing: 41px;
+}
+
+.titleSobreNos{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 49px;
+  line-height: 56px;
+
+  color: #7C4CBB;
+
+  margin: 10px auto 0;
+}
+
+.textSobreNos{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #08020f;
+
+  width: 50%;
+  margin: 0 auto 0;
+
+
+}
+
+.containerGrupoIndividual{
+display: flex;
+}
+
+.imagensGrupo{
+  position: relative;
+  z-index: 1;
+  width: 50%;
+}
+
+.fotoGrupo{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); /* Sombra com cor preta e opacidade de 50% */
+  width: 100%;
+  border-radius: 20px;
+
+  margin:  25px 0 0 120px;
+}
+
+.imagensIndividual{
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 25px 0 0 100px;
+  z-index: 1;
+
+}
+
+.maicom, .higor, .gabriela, .eduarda {
+  height: 220px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); /* Sombra com cor preta e opacidade de 50% */
+
+}
+
+
+.maicom, .gabriela{
+  justify-self: end;
+  margin-right: 10px;
+}
+
+.higor, .eduarda{
+  justify-self: start;
+}
+
+
+.maicom, .higor{
+  align-self: end;
+}
+
+.gabriela, .eduarda{
+  margin-top: 10px;
+
+}
+
+.diagonal-line {
+  
+  width: 220vw; /* Largura maior que a tela para garantir que a linha diagonal preencha a largura completa */
+  height: 80px;
+  transform: rotate(160deg);
+  background-image: linear-gradient(to left, rgb(103, 35, 197, 0.75), rgba(103, 35, 197, 0.38), rgba(248, 246, 250, 0));
+  margin-left: -100vw; /* Reposiciona a linha diagonal para o início da tela */
+  z-index: -0.; 
+}
+
+.diagonalOne{
+  position: absolute;
+  top: 500px;
+  left: 50px;
+}
+
+.diagonalTwo{
+  position: absolute;
+  top: 600px;
+  left: 250px;
+}
+
+.diagonalThree{
+  position: absolute;
+  top: 700px;
+  left: 450px;
+}
+
