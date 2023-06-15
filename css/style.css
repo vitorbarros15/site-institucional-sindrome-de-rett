@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  :root{
+    /*Setings Menu of navegation*/
+        /*fontes*/
+
+        /*Colors*/
+        --bg-primary: #CD4999;
+        --fc-primary: black;
+        --fc-hover: white;
+        --fc-title: #C4C2E0;
+        --fc-rett: #784EAF;
+
+
+
+        /*fontes*/
+        --ff-nav-rett: 'Mulish', sans-serif;
+        --ff-heading: 'Epilogue', sans-serif;
+        --ff-sindromeDe: 'Mulish', sans-serif;
+        --ff-title: 'Paytone One';
+        --ff-phrase: 'Open Sans';
+        --ff-text2: 'Poppins';
+
+    /**/
+    font-size: 62.5%; /* 10px */
+    --fs-nav: clamp(0.5rem, 2vw, 1.8rem);
+
+
+    /*line height*/
+    --lh-nav: clamp(1.2rem, 3vw, 2.5rem);
+
+    /*height*/
+    --height-logo: clamp(.3rem, 4.5vw, 4.2rem);
+
+    /*margim top phrase principal*/
+    --mt-phrase: clamp(1rem, 1rem + 7vw ,12rem);
+}
+
+ 
+.tela1{
+    background: var(--bg-primary);
+    position: relative;
+    height: 100vh;
+}
+
+
+/*---------------MENU DE NAVEGAÇÃO-----------------------*/
+nav{
+    background: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    height: clamp(40px, 38px + 2vw ,10vh);
+}
+
+.logo{
+    position: relative;
+    height: var(--height-logo);
+    left: 5vw;
+    top: 1px;
+}
+  
+  .menu {
+    display: flex;
+    gap: 2.0rem;
+    justify-content: center;
+    padding: 1.5rem;
+    width: 100vw;
+  }
+  
+  .menu-item {
+    display: flex;
+    text-align: center;
+    height: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(1.1rem, 2vw, 1.8rem);
+    line-height: var(--lh-nav);
+    transition: transform .3s;
+
+    color: var(--fc-primary);
+
+  }
+  
+
+  #home{
+    color: white;
+  }
+
+  .menu-item:hover a {
+    font-weight: 500;
+    transform: scale(1.1);
+    color: var(--fc-hover);
+  }
+/*-------------------------------------------*/
+
+
+
+/*--------------------MAIN-------------------*/
+
+.tela1{
+  position: relative;
+  height: 90vh;
+}
+
+
+main {
+    background: var(--bg-primary);
+    display: flex;
+    overflow: hidden;
+
+}
+
+.containerPhrase{
+}
+
+
+.phraseLogo{
+  display: flex;
+}
+
+.phrase{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.8rem;
+    line-height: 9.0rem;
+    color: #C4C2E0;
+    margin-top: var(--mt-phrase);
+    margin-left: 5vw;
+}
+
+.phrase span{
+  display: block;
+}
+
+.sindromeDe{
+  font-family: var(--ff-sindromeDe);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 5.6rem;
+  /* or 102% */
+
+  color: var(--fc-title);
+  mix-blend-mode: normal;
+}
+
+.rett{
+  font-family: var(--ff-nav-rett);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 9.3rem;
+  line-height: 7.0rem;
+
+  letter-spacing: 0.5em;
+
+  color: var(--fc-rett);
+
+  mix-blend-mode: normal;
+}
+
+.logoText{
+    height: 12.6rem;
+    margin-top: var(--mt-phrase);
+}
+
+.containerPhrase h2{
+  font-family: var(--ff-phrase);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+
+
+  color: var(--fc-title);
+
+  mix-blend-mode: normal;
+
+  margin: 0 0 0 5vw;
+  max-width: 45.0rem;
+  margin-top: 1.0rem;
+  text-align: justify;
+}
+
+.containerGirl{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+
+}
+
+.imagemGirl{
+  position: absolute;
+  height: 60%;
+  bottom: 0;
+
+}
+
+/*SOBRE NOS*/
+.tela2 {
+  position: relative;
+  background-color: var(--fc-hover);
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.containerText{
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.titleSobreNos span{
+  letter-spacing: 4.1rem;
+}
+
+.titleSobreNos{
+  font-family: var(--ff-text2);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4.9rem;
+  line-height: 5.6rem;
+
+  color: var(--fc-rett);
+
+  margin: 1.0rem auto 0;
+}
+
+.textSobreNos{
+  font-family: var(--ff-text2);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.7rem;
+  line-height: 2.0rem;
+  text-align: center;
+  color: var(--fc-primary);
+
+  width: 70%;
+  margin: 0 auto 0;
+
+
+}
+
+.containerGrupoIndividual{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+  height: 75vh;
+}
+
+.imagensGrupo{
+  height: 100;
+  z-index: 1;
+  width: 60%;
+  position: relative;
+  display: flex;
+  justify-content: centerg;
+}
+
+.fotoGrupo{
+  position: absolute;
+  box-shadow: 0 0 2.0rem rgba(0, 0, 0, 0.25); /* Sombra com cor preta e opacidade de 50% */
+  height: clamp(200px, 90vw, 400px);
+  border-radius: 2.0rem;
+  margin:  2.5rem ;
+}
+
+.imagensIndividuais{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+  padding-top: 2.5rem;
+  width: 40%;
+}
+.containerMaicomHigor{
+  padding-bottom: 4px;
+}
+
+
+.containerMaicomHigor, .containerGabrielaEduarda{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: clamp(30vw, 100px + 20vw ,50vw);
+}
+
+
+.container_nameText{
+  position: relative;
+  display: flex;
+}
+
+.maicom, .higor, .gabriela, .eduarda {
+  width: 130px;
+  border-radius: 1.0rem;
+  box-shadow: 0 0 2.0rem rgba(0, 0, 0, 0.25); /* Sombra com cor preta e opacidade de 50% */
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.name{
+  font-family: var(--ff-nav-rett);
+  font-style: normal;
+  font-weight: 900;
+  font-size: clamp(0.3rem, 4vw, 1.2rem);
+  line-height: 1.0rem;
+
+  position: absolute;
+  width: clamp(90px, 65px + 5.5vw, 130px);
+  bottom: 15px;
+  left: 12px;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+
+
+  color: var(--fc-rett);
+}
+
+#nameTextGabriela{
+  left: 57%;
+}
+
+#nameTextEduarda{
+  left: 60%;
+}
+
+#nameTextHigor{
+  left: 66%;
+}
+
+#nameTextMaicom{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(90px, 65px + 5.5vw, 130px);
+  z-index: 1;
+}
+
+.diagonal-line {
+  
+  width: 220vw; /* Largura maior que a tela para garantir que a linha diagonal preencha a largura completa */
+  height: 8.0rem;
+  transform: rotate(160deg);
+  background-image: linear-gradient(to left, rgb(103, 35, 197, 0.75), rgba(103, 35, 197, 0.38), rgba(248, 246, 250, 0));
+  margin-left: -100vw; /* Reposiciona a linha diagonal para o início da tela */
+  z-index: -0.; 
+}
+
+.diagonalOne{
+  position: absolute;
+  top: 50.0rem;
+  left: 5.0rem;
+}
+
+.diagonalTwo{
+  position: absolute;
+  top: 60.0rem;
+  left: 25.0rem;
+}
+
+.diagonalThree{
+  position: absolute;
+  top: 70.0rem;
+  left: 45.0rem;
+}
+
+.diagonal-line {
+  
+  width: 220vw; /* Largura maior que a tela para garantir que a linha diagonal preencha a largura completa */
+  height: 8.0rem;
+  transform: rotate(160deg);
+  background-image: linear-gradient(to left, rgb(103, 35, 197, 0.75), rgba(103, 35, 197, 0.38), rgba(248, 246, 250, 0));
+  margin-left: -100vw; /* Reposiciona a linha diagonal para o início da tela */
+  z-index: -0.; 
+}
+
+.diagonalOne{
+  position: absolute;
+  top: 50.0rem;
+  left: 5.0rem;
+}
+
+.diagonalTwo{
+  position: absolute;
+  top: 60.0rem;
+  left: 25.0rem;
+}
+
+.diagonalThree{
+  position: absolute;
+  top: 70.0rem;
+  left: 45.0rem;
+}
+
+
+/* Responsiveness */
+
+@media screen and (max-height: 600px) {
+
+  .tela1, .tela2{
+    height: 600px;
+  }
+}
+
+
+@media (min-width: 550px) and (max-width: 1100px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+  } 
+
+  .imagemGirl{
+    position: absolute;
+    bottom: 0;
+    height: clamp(40%, 40% + 10vw, 60%);
+  }
+}
+
+@media (max-width: 550px) {
+
+  .sindromeDe{
+    font-family: var(--ff-sindromeDe);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+    /* or 102% */
+  
+    color: var(--fc-title);
+    mix-blend-mode: normal;
+  }
+  
+  .rett{
+    font-family: var(--ff-nav-rett);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6.3rem;
+    line-height: 6rem;
+  
+    letter-spacing: 0.5em;
+  
+    color: var(--fc-rett);
+  
+    mix-blend-mode: normal;
+  }
+
+  .logoText{
+    height: 9rem;
+    margin-top: var(--mt-phrase);
+}
+
+main{
+  width: 100%;
+  display: flex;
+
+}
+
+.containerPhrase{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.phraseLogo{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.containerPhrase h2{
+  font-family: var(--ff-phrase);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 2rem;
+
+
+  color: var(--fc-title);
+
+  mix-blend-mode: normal;
+
+  margin: 0 5vw 0 5vw;
+  max-width: 45.0rem;
+  margin-top: 1.0rem;
+  text-align: center;
+}
+
+  .imagemGirl{
+    position: absolute;
+    bottom: 0;
+    height: clamp(20%, 35% + 10vw, 45%);
+  }
+}

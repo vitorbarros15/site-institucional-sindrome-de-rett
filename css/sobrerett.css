@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  /*Setings Menu of navegation*/
+      /*fontes*/
+
+      /*Colors*/
+      --bg-primary: #CD4999;
+      --fc-primary: black;
+      --fc-hover: white;
+      --fc-title: #C4C2E0;
+      --fc-rett: #784EAF;
+
+
+
+      /*fontes*/
+      --ff-nav-rett: 'Mulish', sans-serif;
+      --ff-heading: 'Epilogue', sans-serif;
+      --ff-sindromeDe: 'Mulish', sans-serif;
+      --ff-title: 'Paytone One';
+      --ff-phrase: 'Open Sans';
+      --ff-text2: 'Poppins';
+
+  /**/
+  font-size: 62.5%; /* 10px */
+  --fs-nav: clamp(0.5rem, 2vw, 1.8rem);
+
+
+  /*line height*/
+  --lh-nav: clamp(1.2rem, 3vw, 2.5rem);
+
+  /*height*/
+  --height-logo: clamp(.3rem, 4.5vw, 4.2rem);
+
+  /*margim top phrase principal*/
+  --mt-phrase: clamp(1rem, 1rem + 7vw ,12rem);
+}
+
+
+/*-------------------MAIN-------------------------*/
+
+.tela1-sr{
+  position: relative;
+  height: 90vh;
+}
+
+.main-sr{
+  background: white;
+  display: flex;
+   align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.screen2-sr, .screen3-sr {
+    background: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+
+.containerText-sr{
+  max-width: 40%;
+  margin: 0 0  0 5vw;
+}
+
+.containerText-sr h1, h2, h3{
+  font-family: 'Mulish';
+  font-style: normal;
+  color: #000000;
+}
+
+.containerText-sr h1{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+
+  padding-bottom: 35px;
+ 
+}
+
+.containerText-sr h2, h3{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 35px;
+}
+
+.containerText-sr h4{
+  width: 180px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+
+  background: #A892C5;
+
+}
+
+.containerText-sr h4:hover{
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+/*----------------*/
+.containerImagem-sr{
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.img-sr{
+  position: relative;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+}
+
+
+.oque-e-rett-sr, .diagnostico-sr, .rettmenina-sr{
+
+  position: absolute;
+  width: 300PX;
+  border-radius: 10px;
+
+}
+
+/*-------SCREEN2--------*/
+
+.screen2-sr, .screen3-sr{
+  height: 100vh;
+}
+
+.containerImagem2-sr{
+  width: 40%;
+}
+
+.containerText2-sr{
+  flex: 1;
+  margin-right: 75px;
+}
