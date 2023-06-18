@@ -1,12 +1,13 @@
 import { Router } from "./router.js"
 
-console.log(window.location);
-
 const router = new Router()
 router.add('/', "pages/home.html") 
 router.add("/sobrerett", "/pages/sobrerett.html")
 router.add("/abrete", "/pages/abrete.html")
 router.add(404, "/pages/404.html")
+
+router.add("/sobrerett/o-que-e-a-sindrome-de-rett/", "/pages/sobrerett/oQueSindromeRett.html")
+
 
 router.handle()
     
@@ -20,3 +21,4 @@ const routes = {
     404: "/pages/404.html",
 }
 */
+

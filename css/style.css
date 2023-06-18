@@ -83,7 +83,7 @@ nav{
     font-family: 'Mulish', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(1.1rem, 2vw, 1.8rem);
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
     line-height: var(--lh-nav);
     transition: transform .3s;
 
@@ -217,7 +217,6 @@ main {
 }
 
 .containerText{
-  height: 25vh;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -255,53 +254,58 @@ main {
 }
 
 .containerGrupoIndividual{
-  flex: 1;
   display: flex;
   justify-content: center;
-
   width: 100vw;
-  height: 75vh;
+  height: 80vh;
+  position: relative;
 }
 
 .imagensGrupo{
-  height: 100;
+  height: 100%;
   z-index: 1;
-  width: 60%;
+  width: 48vw;
   position: relative;
   display: flex;
-  justify-content: centerg;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 10vh;
+  margin-left: 15px;
 }
 
 .fotoGrupo{
-  position: absolute;
   box-shadow: 0 0 2.0rem rgba(0, 0, 0, 0.25); /* Sombra com cor preta e opacidade de 50% */
-  height: clamp(200px, 90vw, 400px);
+  height: 400px;
   border-radius: 2.0rem;
-  margin:  2.5rem ;
 }
 
 .imagensIndividuais{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  z-index: 1;
-  padding-top: 2.5rem;
-  width: 40%;
-}
-.containerMaicomHigor{
-  padding-bottom: 4px;
+  align-items: flex-start;
+  width: 32vw;
+  height: 400px;
+  position: relative;
+  margin-top: 10vh;
+
 }
 
 
 .containerMaicomHigor, .containerGabrielaEduarda{
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: clamp(30vw, 100px + 20vw ,50vw);
+  justify-content: flex-start;
+  height: 400px;
 }
 
+.containerMaicomHigor{
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.containerGabrielaEduarda{
+  align-items: flex-start;
+  margin-top: 10px;
+}
 
 .container_nameText{
   position: relative;
@@ -309,11 +313,17 @@ main {
 }
 
 .maicom, .higor, .gabriela, .eduarda {
-  width: 130px;
+  height: 190px;
   border-radius: 1.0rem;
+  margin-left: 60px;
+
   box-shadow: 0 0 2.0rem rgba(0, 0, 0, 0.25); /* Sombra com cor preta e opacidade de 50% */
   position: relative;
   z-index: 1;
+}
+
+.higor, .eduarda{
+
 }
 
 
@@ -322,15 +332,14 @@ main {
   font-family: var(--ff-nav-rett);
   font-style: normal;
   font-weight: 900;
-  font-size: clamp(0.3rem, 4vw, 1.2rem);
+  font-size: 1.1rem;
   line-height: 1.0rem;
 
   position: absolute;
+  bottom: 0px;
+  left: 75%;
+  transform: translate(-50%, -50%);
   width: clamp(90px, 65px + 5.5vw, 130px);
-  bottom: 15px;
-  left: 12px;
-  margin: 0;
-  padding: 0;
   z-index: 2;
 
 
@@ -338,24 +347,20 @@ main {
 }
 
 #nameTextGabriela{
-  left: 57%;
+  left: 72.5%;
 }
 
 #nameTextEduarda{
-  left: 60%;
+  left: 75%;
 }
 
 #nameTextHigor{
-  left: 66%;
+  left: 79%;
 }
 
 #nameTextMaicom{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: clamp(90px, 65px + 5.5vw, 130px);
-  z-index: 1;
+  left: 77%;
+
 }
 
 .diagonal-line {
@@ -419,99 +424,330 @@ main {
 
 @media screen and (max-height: 600px) {
 
-  .tela1, .tela2{
-    height: 600px;
-  }
+    .tela1, .tela2{
+      height: 600px;
+    }
 }
 
 
 @media (min-width: 550px) and (max-width: 1100px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 60px);
-    overflow: hidden;
-  } 
+    main {
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 60px);
+      overflow: hidden;
+    } 
 
-  .imagemGirl{
-    position: absolute;
-    bottom: 0;
-    height: clamp(40%, 40% + 10vw, 60%);
-  }
+    .imagemGirl{
+      position: absolute;
+      bottom: 0;
+      height: clamp(40%, 40% + 10vw, 60%);
+    }
 }
 
 @media (max-width: 550px) {
 
-  .sindromeDe{
-    font-family: var(--ff-sindromeDe);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3.8rem;
-    line-height: 3.8rem;
-    /* or 102% */
+    .sindromeDe{
+      font-family: var(--ff-sindromeDe);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.8rem;
+      line-height: 3.8rem;
+      /* or 102% */
+    
+      color: var(--fc-title);
+      mix-blend-mode: normal;
+    }
+    
+    .rett{
+      font-family: var(--ff-nav-rett);
+      font-style: normal;
+      font-weight: 900;
+      font-size: 6.3rem;
+      line-height: 6rem;
+    
+      letter-spacing: 0.5em;
+    
+      color: var(--fc-rett);
+    
+      mix-blend-mode: normal;
+    }
+
+    .logoText{
+      height: 9rem;
+      margin-top: var(--mt-phrase);
+    }
+
+    main{
+      width: 100%;
+      display: flex;
+
+    }
+
+    .containerPhrase{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .phraseLogo{
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+    }
+
+    .containerPhrase h2{
+      font-family: var(--ff-phrase);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.1rem;
+      line-height: 2rem;
+
+
+      color: var(--fc-title);
+
+      mix-blend-mode: normal;
+
+      margin: 0 5vw 0 5vw;
+      max-width: 45.0rem;
+      margin-top: 1.0rem;
+      text-align: center;
+    }
+
+      .imagemGirl{
+        position: absolute;
+        bottom: 0;
+        height: clamp(20%, 35% + 10vw, 45%);
+    }
+}
+
+/*--------------RESPOSIVIDADE TELA2 "SOBRE NÓS"--------------*/
+@media (max-width: 1078px) {
+
+    .tela2{
+      display: grid;
+    }
+
+    .containerText{
+      height: 60px;
+    }
   
-    color: var(--fc-title);
-    mix-blend-mode: normal;
+    .titleSobreNos{
+      font-family: var(--ff-text2);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 3.5rem;
+      line-height: 4.2rem;
+    
+      color: var(--fc-rett);
+    
+      margin: 1.0rem auto 0;
+    }
+
+    .textSobreNos{
+      font-size: 1.0rem;
+      line-height: 1.2rem;
+      width: 80%;
+    }
+    
+    .containerGrupoIndividual{
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .imagensGrupo{
+
+      width: 100%;
+      height: 430px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0 0 0 0;
+      margin: 0;
+    }
+
+    .fotoGrupo{
+      height: 315px;
+    }
+
+    .imagensIndividuais{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      height: 170px;
+      margin: 0;
+      width: 100vw;
+    }
+
+    .containerMaicomHigor, .containerGabrielaEduarda{
+      margin: 5px 0 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .maicom, .higor, .gabriela, .eduarda {
+      height: 170px;
+      border-radius: 1.0rem;
+      margin-left: 5px;
+    }
+
+    .maicom{
+      margin: 0;
+    }
+
+    .name{
+      font-family: var(--ff-nav-rett);
+      font-style: normal;
+      font-weight: 900;
+      font-size: .9rem;
+      line-height: 1.0rem;
+    
+      position: absolute;
+      bottom: 0px;
+      left: 75px;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    
+    
+      color: var(--fc-rett);
+    }
+
+    #nameTextGabriela{
+      left: clamp(58%, 48% + 2vw ,67%);
+    }
+    
+    #nameTextEduarda{
+      left: clamp(60%, 51% + 2vw ,72%);
+    }
+    
+    #nameTextHigor{
+      left: clamp(65%, 55% + 2vw ,77%);
+    }
+    
+    #nameTextMaicom{
+      left: clamp(60%, 51% + 2vw ,72%);
+    
+    }
+}
+
+@media (max-width: 530px) {
+  .tela2{
+    display: grid;
   }
-  
-  .rett{
-    font-family: var(--ff-nav-rett);
+
+  .containerText{
+    height: 60px;
+  }
+
+  .titleSobreNos span{
+    letter-spacing: 2.1rem;
+  }
+
+  .titleSobreNos{
+    font-family: var(--ff-text2);
     font-style: normal;
-    font-weight: 900;
-    font-size: 6.3rem;
-    line-height: 6rem;
-  
-    letter-spacing: 0.5em;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 2.2rem;
   
     color: var(--fc-rett);
   
-    mix-blend-mode: normal;
+    margin: 1.0rem auto 0;
   }
 
-  .logoText{
-    height: 9rem;
-    margin-top: var(--mt-phrase);
-}
+  .textSobreNos{
+    font-size: .7rem;
+    line-height: 1.2rem;
+    width: 80%;
+  }
+  
+  .containerGrupoIndividual{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-main{
-  width: 100%;
-  display: flex;
+  .imagensGrupo{
 
-}
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.containerPhrase{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+    padding: 0 0 0 0;
+    margin: 0;
+  }
 
-.phraseLogo{
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
+  .fotoGrupo{
+    height: 215px;
+  }
 
-.containerPhrase h2{
-  font-family: var(--ff-phrase);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.1rem;
-  line-height: 2rem;
+  .imagensIndividuais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
+    height: 120px;
+    margin: 0;
+    width: 100vw;
+  }
 
-  color: var(--fc-title);
+  .containerMaicomHigor, .containerGabrielaEduarda{
+    margin: 5px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
-  mix-blend-mode: normal;
+  .maicom, .higor, .gabriela, .eduarda {
+    height: 120px;
+    border-radius: 1.0rem;
+    margin-left: 5px;
+  }
 
-  margin: 0 5vw 0 5vw;
-  max-width: 45.0rem;
-  margin-top: 1.0rem;
-  text-align: center;
-}
+  .maicom{
+    margin: 0;
+  }
 
-  .imagemGirl{
+  .name{
+    font-family: var(--ff-nav-rett);
+    font-style: normal;
+    font-weight: 900;
+    font-size: .7rem;
+    line-height: 1.0rem;
+  
     position: absolute;
-    bottom: 0;
-    height: clamp(20%, 35% + 10vw, 45%);
+    bottom: 0px;
+    left: 75px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  
+  
+    color: var(--fc-rett);
+  }
+
+  #nameTextGabriela{
+    left: clamp(69%, 48% + 2vw ,79%);
+  }
+  
+  #nameTextEduarda{
+    left: clamp(70%, 51% + 2vw ,82%);
+  }
+  
+  #nameTextHigor{
+    left: clamp(75%, 55% + 2vw ,87%);
+  }
+  
+  #nameTextMaicom{
+    left: clamp(70%, 51% + 2vw ,82%);
+  
   }
 }

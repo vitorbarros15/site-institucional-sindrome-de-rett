@@ -1,11 +1,13 @@
 // Orientação a Objetos no JS 
 export class Router {
-    routes = {}
-
+    routes = {};
+    routeName = "";
     add(routeName, page) {
-        this.routes[routeName] = page
+        this.routeName = routeName;
+        this.routes[routeName] = page;
     }
 
+    
     route(event) {
         event = event || window.event
         event.preventDefault()
@@ -24,10 +26,34 @@ export class Router {
             return data.text()
         })
         */
+        this.routeName = pathname;
+        console.log(typeof pathname, pathname);
+
+        console.log(typeof this.routeName, this.routeName);
+
         fetch(route).
         then(data => data.text())
         .then(html => {
             document.querySelector('#app').innerHTML = html
         })
+
+        console.log(typeof "/sobrerett");
+
+        console.log(this.routeName == "/sobrerett");
+
+        if (this.routeName == "/sobrerett") {
+            const codeJS = "/buttons.js";
+            fetch(codeJS)
+            .then(response => response.text())
+            .then(codigo => {
+            const scriptElement = document.getElementById("code");
+            scriptElement.textContent = codigo;
+            })
+            .catch(error => {
+            console.error("Erro ao carregar o arquivo:", error);
+            });
+
+            console.log(codeJS);
+        }
     }
 }
