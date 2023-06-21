@@ -23,7 +23,7 @@ function limparSubMenu() {
 
 let routes = {};
 
-add('/', "pages/home.html")
+add('/', "/pages/home.html")
 add("/sobrerett", "/pages/sobrerett.html")
 add("/abrete", "/pages/abrete.html")
 add(404, "/pages/404.html")
@@ -154,8 +154,25 @@ window.addEventListener('DOMContentLoaded', () => {
         limparSubMenu();
         navegationSobreRett.classList.add('show');
       });
+    
+    // Obtém a URL atual
+    let urlCarregada = window.location.href
+    
+    // Verifica qual página deve ser carregada com base na URL
+    if (urlCarregada.endsWith("/") || urlCarregada.endsWith("/index.html")) {
+        carregamentoConteudo('pages/home.html')
 
-    carregamentoConteudo('pages/home.html');
+  } else if (urlCarregada.endsWith("/sobrerett")) {
+        carregamentoConteudo('pages/sobrerett.html')
+
+  } else if (urlCarregada.endsWith("/abrete")) {
+        carregamentoConteudo('pages/abrete.html')
+
+  } else if (urlCarregada.endsWith("/profissionais")) {
+    carregamentoConteudo('pages/profissionais.html')
+  } else {
+    carregamentoConteudo('pages/404.html')
+  }
 });
 
 
