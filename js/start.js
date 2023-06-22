@@ -9,6 +9,10 @@ const sobrerettLink = document.getElementById('sobrerett');
 const abreteLink = document.getElementById('abrete');
 const profissionaisLink = document.getElementById('profissionais');
 
+const body = document.getElementById('body');
+const app = document.getElementById('app');
+
+
 
 function limparSubMenu() {
     navegationSobreRett.classList.add('hide')
@@ -113,6 +117,9 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('home').addEventListener('click', () => {
         handleNavigation();
         limparSubMenu();
+
+        body.classList.remove('bodyAbrete')
+        app.classList.remove('appAbrete')
         homeLink.style.color = 'white';
         sobrerettLink.style.color = 'black';
         abreteLink.style.color = 'black';
@@ -122,6 +129,9 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('sobrerett').addEventListener('click', () => {
         handleNavigation();
         limparSubMenu();
+
+        body.classList.remove('bodyAbrete')
+        app.classList.remove('appAbrete')
         navegationSobreRett.classList.add('show');
         homeLink.style.color = 'black';
         sobrerettLink.style.color = 'white';
@@ -133,6 +143,8 @@ window.addEventListener('DOMContentLoaded', () => {
         limparSubMenu();
         handleNavigation();
 
+        body.classList.add('bodyAbrete');
+        app.classList.add('appAbrete');
         homeLink.style.color = 'black';
         sobrerettLink.style.color = 'black';
         abreteLink.style.color = 'white';
@@ -143,6 +155,8 @@ window.addEventListener('DOMContentLoaded', () => {
         limparSubMenu();
         handleNavigation() 
 
+        body.classList.remove('bodyAbrete')
+        app.classList.remove('appAbrete')
         homeLink.style.color = 'black';
         sobrerettLink.style.color = 'black';
         abreteLink.style.color = 'black';
@@ -172,6 +186,7 @@ window.addEventListener('DOMContentLoaded', () => {
     carregamentoConteudo('pages/profissionais.html')
   } else {
     carregamentoConteudo('pages/404.html')
+
   }
 });
 

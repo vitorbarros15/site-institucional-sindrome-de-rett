@@ -101,7 +101,7 @@ nav{
     transform: scale(1.1);
     color: var(--fc-hover);
   }
-
+/*---------------------------------*/
 
 .hide:not(.show) {
   display: none;

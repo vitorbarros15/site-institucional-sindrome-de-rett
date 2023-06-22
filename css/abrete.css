@@ -1,3 +1,79 @@
+.bodyAbrete{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.appAbrete{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.pageAbrete{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.divLogoAbrete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #logoAbrete{
-    height: 50px;
+    height: 130px;
+}
+
+.textAbrete{
+    width: 80%;
+}
+.textAbrete h1{
+    font-family: 'Mulish';
+    font-style: bold;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.textAbrete h2{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.divImagemSiteAbrete{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#imagemSiteAbrete{
+    width: 80vw;
+    box-shadow: 0 0 2.0rem rgba(0, 0, 0, 0.25); /* Sombra com cor preta e opacidade de 50% */
+    border-radius: 2rem 2rem 0 0;
+
+}
+
+#linkAbrete {
+    font-size: 14px;
+
+    position: absolute;
+    display: block;
+    margin-bottom: 10px; /* Ajuste esse valor conforme necessário */
+    z-index: 2;
+    left: 80px;
+    top: 0;
 }
