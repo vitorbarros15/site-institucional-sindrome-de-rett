@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
   }
 
   :root{
@@ -48,56 +49,64 @@
 
 
 /*---------------MENU DE NAVEGAÇÃO-----------------------*/
-nav{
+
+
+.logo-menu-container {
     background: var(--bg-primary);
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 5px;
-    height: clamp(40px, 38px + 2vw ,10vh);
+    height: clamp(70px, 65px + 2vw, 10vh);
+}
+
+.divImagemLogoNav{
+  position: absolute;
+  display: flex;
+  left: 5vw;
+  align-items: center;
 }
 
 .logo{
-    position: relative;
+    z-index: 2;
     height: var(--height-logo);
     left: 5vw;
-    top: 1px;
+    top: 15px;
 }
   
   .menu {
+    position: relative;
+    z-index: 1;
     display: flex;
     gap: 2.0rem;
     justify-content: center;
-    padding: 1.5rem;
-    width: 100vw;
+
+    margin: 0 5vw 0;
   }
   
   .menu-item {
     display: flex;
+    align-items: center;
     text-align: center;
     height: 100%;
+    height: 70px;
   }
   
-  a {
+  #home, #sobrerett, #abrete, #profissionais {
     text-decoration: none;
     font-family: 'Mulish', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: clamp(1.4rem, 2vw, 1.8rem);
     line-height: var(--lh-nav);
     transition: transform .3s;
-
     color: var(--fc-primary);
 
   }
   
 
-  #home{
-    color: white;
-  }
-
   .menu-item:hover a {
-    font-weight: 500;
+    font-weight: 400;
     transform: scale(1.1);
     color: var(--fc-hover);
   }
@@ -177,8 +186,8 @@ main {
   font-family: var(--ff-sindromeDe);
   font-style: normal;
   font-weight: 700;
-  font-size: 5.8rem;
-  line-height: 5.6rem;
+  font-size: 6.8rem;
+  line-height: 6.6rem;
   /* or 102% */
 
   color: var(--fc-title);
@@ -189,7 +198,7 @@ main {
   font-family: var(--ff-nav-rett);
   font-style: normal;
   font-weight: 900;
-  font-size: 9.3rem;
+  font-size: 11.3rem;
   line-height: 7.0rem;
 
   letter-spacing: 0.5em;
@@ -200,26 +209,22 @@ main {
 }
 
 .logoText{
-    height: 12.6rem;
+    height: 15rem;
     margin-top: var(--mt-phrase);
 }
 
 .containerPhrase h2{
-  font-family: var(--ff-phrase);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 2.8rem;
-
-
-  color: var(--fc-title);
-
-  mix-blend-mode: normal;
-
-  margin: 0 0 0 5vw;
-  max-width: 45.0rem;
-  margin-top: 1.0rem;
-  text-align: justify;
+    font-family: var(--ff-phrase);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: var(--fc-title);
+    mix-blend-mode: normal;
+    margin: 0 0 0 5vw;
+    max-width: 55rem;
+    margin-top: 1rem;
+    text-align: justify;
 }
 
 .containerGirl{
@@ -460,8 +465,8 @@ main {
     }
 }
 
-
-@media (min-width: 550px) and (max-width: 1100px) {
+@media (min-width: 620px) and (max-width: 1100px) {
+  
     main {
       display: flex;
       flex-direction: column;
@@ -476,7 +481,11 @@ main {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 620px) {
+
+    .divImagemLogoNav{
+      left: 2vw;
+    }
 
     .sindromeDe{
       font-family: var(--ff-sindromeDe);
@@ -508,7 +517,11 @@ main {
       height: 9rem;
       margin-top: var(--mt-phrase);
     }
-
+    .divH2Home{
+      display: flex;
+      justify-content: center;
+    }
+    
     main{
       width: 100%;
       display: flex;

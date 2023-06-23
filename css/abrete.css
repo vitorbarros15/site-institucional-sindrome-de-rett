@@ -26,7 +26,36 @@
 }
 
 #logoAbrete{
-    height: 130px;
+    margin: 10px 0 10px 0;
+    height: 120px;
+    transition: transform .3s;
+}
+
+#linkImagemAbrete {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao-imagem {
+    font-family: 'Mulish';
+    font-style: normal;
+    position: absolute;
+    bottom: 10px;
+    left: 1px;
+    width: 100%;
+    text-align: center;
+    color: #000; 
+    padding: 5px; 
+    font-size: 9px;
+    line-height: 15px;
+    margin-left: 1.5px;
+  }
+
+#logoAbrete:hover{
+    cursor: pointer;
+    transform: scale(1.05);   
 }
 
 .textAbrete{
@@ -36,7 +65,7 @@
     font-family: 'Mulish';
     font-style: bold;
     font-weight: 600;
-    font-size: 24px;
+    font-size: clamp(10px, 10px + 2vw ,24px);
     line-height: 25px;
     color: #000000;
 }
@@ -45,8 +74,8 @@
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: clamp(10px, 10px + 1vw ,20px);
+    line-height: 23px;
     color: #000000;
     text-align: justify;
     margin-bottom: 30px;
@@ -67,13 +96,23 @@
 
 }
 
-#linkAbrete {
-    font-size: 14px;
-
-    position: absolute;
-    display: block;
-    margin-bottom: 10px; /* Ajuste esse valor conforme necessário */
-    z-index: 2;
-    left: 80px;
-    top: 0;
+#linkSiteAbrete {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 12px;
+    transition: transform .3s ;
+    color: #000;
 }
+
+#linkSiteAbrete:hover{
+    cursor: pointer;
+    font-weight: 500;
+    transform: scale(1.5);
+}
+
+span{
+    text-decoration: none;
+}
+

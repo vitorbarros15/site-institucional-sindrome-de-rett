@@ -175,6 +175,8 @@ window.addEventListener('DOMContentLoaded', () => {
     // Verifica qual página deve ser carregada com base na URL
     if (urlCarregada.endsWith("/") || urlCarregada.endsWith("/index.html")) {
         carregamentoConteudo('pages/home.html')
+        homeLink.style.color = 'white';
+
 
   } else if (urlCarregada.endsWith("/sobrerett")) {
         carregamentoConteudo('pages/sobrerett.html')
