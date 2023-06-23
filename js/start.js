@@ -26,11 +26,14 @@ function limparSubMenu() {
 }
 
 let routes = {};
-
+/*Paginas principais */
 add('/', "/pages/home.html")
 add("/sobrerett", "/pages/sobrerett.html")
 add("/abrete", "/pages/abrete.html")
+add("/profissionais", "/pages/profissionais.html")
 add(404, "/pages/404.html")
+
+/*SubPaginas Sobre Rett */
 add("/sobrerett/o-que-e-a-sindrome-de-rett/", "/pages/sobrerett/oQueSindromeRett.html")
 add("/sobrerett/diagnostico/", "/pages/sobrerett/diagnostico.html")
 add("/sobrerett/manistacoes/", "/pages/sobrerett/manistacoes.html")
