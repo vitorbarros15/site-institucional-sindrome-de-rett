@@ -1,0 +1,153 @@
+#seta-direita-pediatra,
+#seta-cima-pediatra, 
+#seta-direita-neurologista,
+#seta-cima-neurologista, 
+#seta-direita-orto,
+#seta-cima-orto,
+#seta-direita-gastro,
+#seta-cima-gastro,
+#seta-direita-nutri,
+#seta-cima-nutri,
+#seta-direita-pneu,
+#seta-cima-pneu,
+#seta-direita-cardio,
+#seta-cima-cardio,
+#seta-direita-endo,
+#seta-cima-endo,
+#seta-direita-fono,
+#seta-cima-fono,
+#seta-direita-odonto,
+#seta-cima-odonto{
+    font-size: 24px;
+    height: 100%;
+}
+
+/*Pediatria*/
+#seta-cima-pediatra {
+   display: none;
+  }
+
+#seta-cima-pediatra.show{
+    display: flex;
+}
+
+#seta-direita-pediatra.hide{
+    display: none;
+}
+
+/*Neurologista*/
+#seta-cima-neurologista {
+    display: none;
+   }
+ 
+ #seta-cima-neurologista.show{
+     display: flex;
+ }
+ 
+ #seta-direita-neurologista.hide{
+     display: none;
+ }
+
+ /*Ortopedista*/
+#seta-cima-orto {
+    display: none;
+   }
+ 
+ #seta-cima-orto.show{
+     display: flex;
+ }
+ 
+ #seta-direita-orto.hide{
+     display: none;
+ }
+
+  /*Gastrologista*/
+#seta-cima-gastro {
+    display: none;
+   }
+ 
+ #seta-cima-gastro.show{
+     display: flex;
+ }
+ 
+ #seta-direita-gastro.hide{
+     display: none;
+ }
+
+ /*Nutricionista*/
+#seta-cima-nutri {
+    display: none;
+   }
+ 
+ #seta-cima-nutri.show{
+     display: flex;
+ }
+ 
+ #seta-direita-nutri.hide{
+     display: none;
+ }
+
+  /*Pneumologista*/
+#seta-cima-pneu {
+    display: none;
+   }
+ 
+ #seta-cima-pneu.show{
+     display: flex;
+ }
+ 
+ #seta-direita-pneu.hide{
+     display: none;
+ }
+
+   /*Caridologista*/
+#seta-cima-cardio {
+    display: none;
+   }
+ 
+ #seta-cima-cardio.show{
+     display: flex;
+ }
+ 
+ #seta-direita-cardio.hide{
+     display: none;
+ }
+
+    /*Endocrinologista*/
+#seta-cima-endo {
+    display: none;
+   }
+ 
+ #seta-cima-endo.show{
+     display: flex;
+ }
+ 
+ #seta-direita-endo.hide{
+     display: none;
+ }
+
+     /*Fonoaudiológa*/
+#seta-cima-fono {
+    display: none;
+   }
+ 
+ #seta-cima-fono.show{
+     display: flex;
+ }
+ 
+ #seta-direita-fono.hide{
+     display: none;
+ }
+
+ /*Odontologia*/
+#seta-cima-odonto {
+    display: none;
+   }
+ 
+ #seta-cima-odonto.show{
+     display: flex;
+ }
+ 
+ #seta-direita-odonto.hide{
+     display: none;
+ }

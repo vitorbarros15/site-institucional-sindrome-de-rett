@@ -1,0 +1,44 @@
+
+.pageDepoimentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.textSofia{
+    width: 70vw;
+    margin: 0 5vw 0;
+    text-align: justify;
+}
+
+.divImagemSofia{
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    margin-right: 5vw;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+#fotoSofia{
+    height: 450px;
+}
+
+@media screen and (max-width: 1250px) {
+    .pageDepoimentos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    .divImagemSofia{
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+    }
+
+}
