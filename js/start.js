@@ -58,47 +58,45 @@ window.addEventListener('DOMContentLoaded', () => {
             document.getElementById('app').innerHTML = html;
 
 
-                if (url == '/pages/sobrerett.html') {
-                    const btnCarregarHTMLOQueE = document.getElementById('btnOqueRett');
-                    const btnCarregarHTMLDiagnostico = document.getElementById('btnDiagnostico');
-                    const btnCarregarHTMLManifestacao = document.getElementById('btnManifestacoes');
+            const btnCarregarHTMLOQueE = document.getElementById('btnOqueRett');
+            const btnCarregarHTMLDiagnostico = document.getElementById('btnDiagnostico');
+            const btnCarregarHTMLManifestacao = document.getElementById('btnManifestacoes');
 
-                    btnCarregarHTMLOQueE.addEventListener('click', () => {
-                        fetch('pages/sobrerett/oQueSindromeRett.html').then(response => response.text()).then(html => {
-                            document.getElementById('app').innerHTML = html;
-                        })
-                        .catch(error => {
-                            console.error('Erro ao carregar o conteúdo de oQueSindromeRett.html:', error);
-                        });
+            btnCarregarHTMLOQueE.addEventListener('click', () => {
+                fetch('pages/sobrerett/oQueSindromeRett.html').then(response => response.text()).then(html => {
+                    document.getElementById('app').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Erro ao carregar o conteúdo de oQueSindromeRett.html:', error);
+                });
 
-                        subNavegation.innerHTML = `<h1>- O que é a Sindrome de Rett?</h1>`;
-                        btnVoltar.classList.add('show');
-                        subNavegation.classList.add('show');
-                    });
-                    
-                    btnCarregarHTMLDiagnostico.addEventListener('click', () => {
-                        fetch('pages/sobrerett/diagnostico.html').then(response => response.text()).then(html => {document.getElementById('app').innerHTML = html;})
-                        .catch(error => {
-                            console.error('Erro ao carregar o conteúdo de diagnostico.html:', error);
-                        });
+                subNavegation.innerHTML = `<h1>- O que é a Sindrome de Rett?</h1>`;
+                btnVoltar.classList.add('show');
+                subNavegation.classList.add('show');
+            });
+            
+            btnCarregarHTMLDiagnostico.addEventListener('click', () => {
+                fetch('pages/sobrerett/diagnostico.html').then(response => response.text()).then(html => {document.getElementById('app').innerHTML = html;})
+                .catch(error => {
+                    console.error('Erro ao carregar o conteúdo de diagnostico.html:', error);
+                });
 
-                        subNavegation.innerHTML = `<h1>- Diagnóstico</h1>`;
-                        btnVoltar.classList.add('show')
-                        subNavegation.classList.add('show')
-                        
-                    });
+                subNavegation.innerHTML = `<h1>- Diagnóstico</h1>`;
+                btnVoltar.classList.add('show')
+                subNavegation.classList.add('show')
+                
+            });
 
-                    btnCarregarHTMLManifestacao.addEventListener('click', () => {
-                        fetch('pages/sobrerett/manifestacoes.html').then(response => response.text()).then(html => {document.getElementById('app').innerHTML = html;})
-                        .catch(error => {
-                            console.error('Erro ao carregar o conteúdo de manifestacao.html:', error);
-                        });
+            btnCarregarHTMLManifestacao.addEventListener('click', () => {
+                fetch('pages/sobrerett/manifestacoes.html').then(response => response.text()).then(html => {document.getElementById('app').innerHTML = html;})
+                .catch(error => {
+                    console.error('Erro ao carregar o conteúdo de manifestacao.html:', error);
+                });
 
-                        subNavegation.innerHTML = `<h1>- Manifestações</h1>`;
-                        btnVoltar.classList.add('show')
-                        subNavegation.classList.add('show')
-                    });
-                }
+                subNavegation.innerHTML = `<h1>- Manifestações</h1>`;
+                btnVoltar.classList.add('show')
+                subNavegation.classList.add('show')
+            });
 
                     /*Pagina 'Qual Profissional Procurar?' */
                     /*Acompanhamento Fisio */
